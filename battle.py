@@ -1,5 +1,3 @@
-# gamerepository
-
 import random
 import sys
 import time
@@ -112,7 +110,8 @@ def loot_equipment(player,enemy_list):
 def battle_sequence(player,enemy_list):
 
     print(f'{player["Hades"]} encounters {enemy_list["Judas"]}! (health: {enemy_list["health"]})')
-        while player['health'] > 100 and enemy_list['health'] > 100:
+
+    while player['health'] > 100 and enemy_list['health'] > 100:
         player_attack(player,enemy_list)
         enemy_attack(enemy_list,player)
     if player ['health'] > enemy_list['health']:
@@ -166,3 +165,10 @@ def run_game(player,enemy_list):
     print('You have defeated all the Gods and are truly worthy!')
 
 run_game(player,enemy_list) 
+
+
+
+
+
+
+
